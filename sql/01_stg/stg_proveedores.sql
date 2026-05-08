@@ -1,3 +1,12 @@
+-- ============================================================
+-- Tabla: stg.proveedores
+-- Descripción: Almacena la información básica de los proveedores
+-- --              de la empresa. Cada registro representa
+-- --              proveedores adquirido.
+-- Autor: Teofilo Correa Rojas
+-- Fecha: 8 de mayo 2026
+-- ============================================================
+
 CREATE TABLE IF NOT EXISTS stg.proveedores (
 
     id          SERIAL          PRIMARY KEY,
