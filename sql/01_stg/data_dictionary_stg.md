@@ -62,8 +62,8 @@ Cada registro representa un producto adquirido.
 | descripcion          | Descripción detallada del producto       | No          | No    | TEXT          | Texto corto, sabemos que no superará 250 caracteres             |
 | precio        | Precio de venta             | Sí          | No    | NUMERIC(10,2) | Necesita decimales exactos, es un valor monetario               |
 | stock         | Cantidad disponible en inventario     | Sí          | No    | INT           | Aceptar cantidad de mas de 2 millones de numeros para no limitar |
-| categoria_id  | FK — a qué categoría pertenece     | Sí          | No    | INT           | Se relaciona con la tabla de categorias                         |
-| proveedor_id  | FK — quién lo suministra     | Sí          | No    | INT           | Se relaciona con la tabla de proveedor                          |
+| categoria_id  | FK — a qué categoría pertenece     | No          | No    | INT           | Se relaciona con la tabla de categorias                         |
+| proveedor_id  | FK — quién lo suministra     | No          | No    | INT           | Se relaciona con la tabla de proveedor                          |
 | activo     | Si el producto está disponible | Sí          | No    | BOOLEAN       | Solo puede ser verdadero o falso                                |
 | created_at     | Cuándo se creó el registro | Sí          | No    | TIMESTAMP     | Necesitamos fecha y hora exacta de carga          |
 
@@ -116,7 +116,7 @@ Cada registro representa a una orden generada.
 | Campo          | ¿Qué guarda?                        | Obligatorio | Único | Tipo elegido  | Razón del tipo                                          |
 |----------------|-------------------------------------|-------------|-------|---------------|---------------------------------------------------------|
 | id             | Identificador único de la orden    | Sí          | Sí    | SERIAL        | Se genera automático, no necesitamos asignarlo          |
-| cliente_id         | FK — quién hizo la compra        | Sí          | No    | INT           | Se relaciona con la tabla de compras                    |
+| cliente_id         | FK — quién hizo la compra        | No          | No    | INT           | Se relaciona con la tabla de compras                    |
 | empleado_id          | FK — quién procesó la orden       | No          | No    | INT           | Se relaciona con la tabla de empleados                  |
 | fecha_orden        | Cuándo se realizó la compra             | Sí          | No    | DATE          | Necesitamos fecha que se registro de la orden           |
 | estado        | Estado ej: pendiente, enviado, entregado             | Si          | No    | VARCHAR(50)   | Estado de la orden                                      |
@@ -134,8 +134,8 @@ Cada registro representa a un detalle de la orden generada.
 | Campo          | ¿Qué guarda?                        | Obligatorio | Único | Tipo elegido  | Razón del tipo                                    |
 |----------------|-------------------------------------|-------------|-------|---------------|---------------------------------------------------|
 | id             | Identificador único del detalle    | Sí          | Sí    | SERIAL        | Se genera automático, no necesitamos asignarlo    |
-| orden_id         | FK — a qué orden pertenece        | Sí          | No    | INT           | Se relaciona con la tabla de ordenes              |
-| producto_id          | FK — qué producto se compró       | Sí          | No    | INT           | Se relaciona con la tabla de productos            |
+| orden_id         | FK — a qué orden pertenece        | No          | No    | INT           | Se relaciona con la tabla de ordenes              |
+| producto_id          | FK — qué producto se compró       | No          | No    | INT           | Se relaciona con la tabla de productos            |
 | cantidad        | Cuántas unidades se compraron             | Sí          | No    | INT           | Saber la cantidad de articulo compro el individuo |
 | precio_unitario        | Precio del producto al momento de compra             | Si          | No    | NUMERIC(10,2) | Precio de los articulo unitario                   |
 | subtotal        | cantidad x precio_unitario             | Sí          | No    | NUMERIC(10,2) | Cantidad de precio por unidad                     |
