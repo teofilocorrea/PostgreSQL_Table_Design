@@ -41,7 +41,7 @@ Cada registro representa un proveedor contratado.
 | id             | Identificador único del proveedor   | Sí          | Sí    | SERIAL       | Se genera automático, no necesitamos asignarlo                     |
 | nombre         | Nombre de la empresa proveedora        | Sí          | No    | VARCHAR(100) | Texto corto, sabemos que no superará 100 caracteres                |
 | contacto          | Nombre de la persona de contacto       | No          | No    | VARCHAR(150) | Texto corto, sabemos que no superará 150 caracteres                |
-| email        | Correo electrónico del proveedor             | No          | Sí    | VARCHAR(150) | Texto corto con longitud máxima conocida                           |
+| email        | Correo electrónico del proveedor             | No          | No    | VARCHAR(150) | Texto corto con longitud máxima conocida                           |
 | telefono         | Número de teléfono     | No          | No    | VARCHAR(15)  | Solo puede aceptar 15 digitos que no incluye Guiones ni parentesis |
 | pais  | País de origen del proveedor     | No          | No    | VARCHAR(100) | Texto corto con longitud máxima conocida 100 caracteres            |
 | activo  | Si el proveedor está activo     | Sí          | No    | BOOLEAN      | Solo puede ser verdadero o falso            |
@@ -79,7 +79,7 @@ Cada registro representa a un empleado.
 |----------------|-------------------------------------|-------------|-------|--------------|---------------------------------------------------------|
 | id             | Identificador único del empleado    | Sí          | Sí    | SERIAL       | Se genera automático, no necesitamos asignarlo          |
 | nombre         | Nombre completo        | Sí          | No    | VARCHAR(250) | Texto corto, sabemos que no superará 250 caracteres     |
-| email          | Correo corporativo       | Sí          | Sí    | VARCHAR(100) | Texto corto con longitud máxima conocida 100 caracteres |
+| email          | Correo corporativo       | Sí          | No    | VARCHAR(100) | Texto corto con longitud máxima conocida 100 caracteres |
 | cargo        | Puesto que ocupa ej: Vendedor, Gerente             | Sí          | No    | VARCHAR(250) | Texto corto con longitud máxima conocida 250 caracteres |
 | fecha_ingreso        | Cuándo entró a la empresa             | Sí          | No    | DATE         | Necesitamo la fecha de ingreso del empleado             |
 | activo        | Si está activo en la empresa             | Sí          | No    | BOOLEAN      | Solo puede ser verdadero o falso |
@@ -97,7 +97,7 @@ Cada registro representa a un ciente.
 |----------------|-------------------------------------|-------------|-------|--------------|---------------------------------------------------------|
 | id             | Identificador único del cliente    | Sí          | Sí    | SERIAL       | Se genera automático, no necesitamos asignarlo          |
 | nombre         | Nombre completo        | Sí          | No    | VARCHAR(250) | Texto corto, sabemos que no superará 250 caracteres     |
-| email          | Correo del cliente       | Sí          | Sí    | VARCHAR(100) | Texto corto con longitud máxima conocida 100 caracteres |
+| email          | Correo del cliente       | Sí          | No    | VARCHAR(100) | Texto corto con longitud máxima conocida 100 caracteres |
 | telefono        | Teléfono de contacto             | No          | No    | VARCHAR(30)  | Texto corto con longitud máxima conocida 30 caracteres  |
 | ciudad        | Ciudad donde vive             | No          | No    | VARCHAR(250) | Texto corto con longitud máxima conocida 250 caracteres |
 | pais        | País donde vive             | No          | No    | VARCHAR(250) | Texto corto con longitud máxima conocida 250 caracteres |
