@@ -122,7 +122,7 @@ PostgreSQL_Table_Design/
 > Las tablas STG son independientes entre sí.
 > Las relaciones formales se implementan en la capa Silver.
 
-![ERD STG](/Users/teofilo/DataGripProjects/PostgreSQL_Table_Design/docs/diagram_erd_stg.png)
+![ERD STG](https://raw.githubusercontent.com/teofilocorrea/PostgreSQL_Table_Design/main/docs/diagram_erd_stg.png)
 
 ---
 
