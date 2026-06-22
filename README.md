@@ -142,6 +142,6 @@ PostgreSQL_Table_Design/
 
 ### Teófilo Correa Rojas
 
-**Analista de Datos | Data Steward**
+**Project Manager Digital | Data analytic**
 
 🔗 [LinkedIn](https://www.linkedin.com/in/teófilo-correa-rojas/)
